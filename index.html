@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BOM浏览器对象模型</title>
+</head>
+<body>
+	<script>
+		// alert(window.screenX);
+		// alert(window.screenLeft);//浏览器相对于左边的距离
+		// alert(window.innerWidth);//视口的宽度  可见
+		// alert(window.innerHeight);//视口的高度
+		// alert(window.outerWidth);//整个浏览器的宽度
+		// alert(document.documentElement.clientWidth);//兼容性用来获取浏览器的宽度，内容的
+		// window.frames   //帧窗口  frames set
+		// window.top      //子窗口的顶层窗口
+		// window.parent   //子窗口的父级窗口
+		// window.self     //子窗口本身
+		// window == self   //true 
+		// window.moveTo(50, 50); //移动到50,50
+		// window.moveBy(50, 50); //当前的基础上来改变
+		// window.resizeBy(100, 100)  //改变尺寸大小
+		
+
+
+		// 时间间隔函数   写动画
+		// 函数：回调函数，周期  毫秒   最小周期是4ms
+		// window.setInterval(function(){//按照某一个指定的周期不停的执行某一个函数
+
+		// },1000)  
+
+		// var fn = function(){    //传函数名
+		// 	alert(1);
+		// }
+ 	//     let t = window.setInterval(fn,1000);
+           
+
+           // window.setInterval(() =>{alert(1)},1000);  //箭头函数
+           // window.clearInterval(t)   //清除时间函数,清除之前先存下来
+           
+
+           // 在规定的时间之后，只执行一次
+   //         var fn = function(){    //传函数名
+			// alert(1);
+			// }
+   //         let t = setTimeout(fn,1000);
+           // clearTimeout(t);
+           
+
+           // 递归
+           var fn = function(){    //传函数名
+			alert(1);
+			setTimeout(fn,1000);
+			}
+            fn();
+
+
+           // alert();
+           // prompt();
+           // let t = confirm('确定取消');
+           // alert(t);
+           // open('a.html');  //地址  新窗口的名字   修饰   打开
+           // close();  //关闭
+           
+
+
+           // 历史记录   history
+           
+
+           // location  地址
+           // url:uniform resource locator
+           // this is for everyone
+	</script>
+</body>
+</html>
